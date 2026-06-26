@@ -1,9 +1,9 @@
 # Marketing Mix Modeling: A Universal Framework for FMCG Sales Attribution
 
-## 📌 Project Overview
+## Project Overview
 This repository contains a three-stage, end-to-end analytical framework designed to solve one of the most persistent challenges in the Fast-Moving Consumer Goods (FMCG) sector: accurately attributing sales to simultaneous marketing channels. Moving beyond basic proprietary tools, this project provides an independent, model-driven pipeline that ingests raw sales data, autonomously trains predictive models, and outputs mathematically grounded contribution percentages for media budget optimization. 
 
-## 🏗️ Core Architecture & Modules
+## Core Architecture & Modules
 
 ### 1. Universal Data Cleaning Pipeline
 Real-world retail data is rarely model-ready. This module serves as an automated preprocessing engine:
@@ -24,13 +24,13 @@ The core attribution framework that accounts for media carryover and diminishing
 * **Multi-Architecture Comparison:** Simultaneously runs seven distinct models (including Lasso, Ridge, Random Forest, XGBoost, OLS, and Bayesian PyMC) to benchmark performance and establish consensus.
 * **Solving Multicollinearity:** Demonstrates how unregularized models (like OLS) fail due to highly correlated spend data, while robust architectures (Lasso and Bayesian) successfully isolate true channel impacts.
 
-## 📊 Key Business Insights & Strategic Recommendations
+## Key Business Insights & Strategic Recommendations
 This framework translates statistical outputs into actionable product and marketing strategies:
 * **Model Reliability:** Lasso emerged as the strongest frequentist architecture (MAPE: 3.07%, R-squared: 0.9726), while the Bayesian PyMC model (MAPE: 3.19%, R-squared: 0.9671) provided crucial uncertainty quantification.
 * **Baseline Demand:** Base Sales (driven by distribution and macroeconomics) account for approximately 47% of total revenue, highlighting the necessity of supply chain reliability.
 * **Media Reallocation:** TV (~22%) and Facebook (~20%) represent the most reliable paid media drivers, whereas TikTok and Influencer channels exhibited high attribution uncertainty, signaling the need for localized incrementality testing before scaling budgets.
 
-## 💻 Tech Stack
+## Tech Stack
 * **Languages & Core Libraries:** Python, pandas, NumPy, scikit-learn, statsmodels.
 * **Machine Learning & Ensembles:** XGBoost, Random Forest, CatBoost.
 * **Probabilistic Programming:** PyMC (Markov Chain Monte Carlo sampling).
